@@ -1,0 +1,3 @@
+[submodule "KV-Chain-of-Embedding"]
+	path = KV-Chain-of-Embedding
+	url = git@github.com:cmd2001/KV-Chain-of-Embedding.git
