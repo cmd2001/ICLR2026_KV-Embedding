@@ -1,5 +1,5 @@
-# ICLR2026_Beyond
-[ICLR 2026] Beyond Speedup – Utilizing KV Cache for Sampling and Reasoning
+# Beyond Speedup – Utilizing KV Cache for Sampling and Reasoning
+**Accepted by ICLR 2026**
 
 This repository contains the code used to evaluate KV-cache–based methods proposed in our ICLR 2026 submission, including MTEB evaluation, KV-CoE inference, and KV-based classification.
 
@@ -30,3 +30,16 @@ The KVClassifier pipeline consists of the following steps:
 5. Run `eval_kv_classifier_generative.py`, followed by `parse_kv_classifier_results_generative.py`, to evaluate the KVClassifier in the generative setting.
 
 The core implementation of KVClassifier is provided in `kv_classfier.py`.
+
+## Reference
+
+```bibtex
+@inproceedings{
+anonymous2026beyond,
+title={Beyond Speedup - Utilizing {KV} Cache for Sampling and Reasoning},
+author={Xing, Zeyu and Li, Xing and Zhen, Hui-Ling and Yuan, Mingxuan and Pan, Sinno Jialin},
+booktitle={The Fourteenth International Conference on Learning Representations},
+year={2026},
+url={https://openreview.net/forum?id=GUhmiJaAzv}
+}
+```
