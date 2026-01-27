@@ -1,0 +1,7 @@
+# python3 run_kv_classfier_eval_truthful_qa.py --checkpoint_path="checkpoints_re/kv_classifier_iter_199_seq_len_32_n_layers_8_selected_layers_28,29,30,31,32,33,34,35_batch_size_1024_lr_1e-05.pt"
+# python3 run_kv_classfier_eval_truthful_qa.py --checkpoint_path="checkpoints_re/kv_classifier_iter_199_seq_len_64_n_layers_4_selected_layers_32,33,34,35_batch_size_1024_lr_1e-05.pt"
+# python3 run_kv_classfier_eval_truthful_qa.py --checkpoint_path="checkpoints_re/kv_classifier_iter_199_seq_len_128_n_layers_2_selected_layers_34,35_batch_size_1024_lr_1e-05.pt"
+
+python3 run_kv_classifier_multi.py --dataset_path="qwen3_8b_truthfulqa_fast_slow_results.jsonl" --checkpoint_path="checkpoints_re/kv_classifier_iter_199_seq_len_32_n_layers_8_selected_layers_28,29,30,31,32,33,34,35_batch_size_1024_lr_1e-05.pt" | tee 32_8_layers_8b_qwen3_trail_multi.log
+# python3 run_kv_classifier_multi.py --dataset_path="qwen3_8b_truthfulqa_fast_slow_results.jsonl" --checkpoint_path="checkpoints_re/kv_classifier_iter_129_seq_len_64_n_layers_4_selected_layers_44,45,46,47_batch_size_1024_lr_1e-05.pt" | tee tfqa_64_4_layers_8b_qwen_trail_multi.log
+# python3 run_kv_classifier_multi.py --dataset_path="qwen3_8b_truthfulqa_fast_slow_results.jsonl" --checkpoint_path="checkpoints_re/kv_classifier_iter_149_seq_len_128_n_layers_2_selected_layers_46,47_batch_size_1024_lr_1e-05.pt" | tee tfqa_128_2_layers_8b_qwen_trail_multi.log

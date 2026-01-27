@@ -1,0 +1,36 @@
+python3 run_kv_classfier_eval.py --dataset_path="../gsm8k/gsm8k_test.jsonl" --checkpoint_path="checkpoints_re/kv_classifier_iter_79_seq_len_32_n_layers_8_selected_layers_40,41,42,43,44,45,46,47_batch_size_1024_lr_1e-05.pt"
+python3 parse_kv_classfier_results_legacy.py --dataset='../gsm8k/gsm8k_test.jsonl' --generation_result_path='../gsm8k/gsm8k_test_dpsk_14b_trail.jsonl' --eval_result_path='../gsm8k/gsm8k_test_results_32_8.jsonl' | tee 32_8_layers_8b_dpsk_trail.log
+python3 run_kv_classfier_eval.py --dataset_path="../gsm8k/gsm8k_test.jsonl" --checkpoint_path="checkpoints_re/kv_classifier_iter_109_seq_len_64_n_layers_4_selected_layers_44,45,46,47_batch_size_1024_lr_1e-05.pt"
+python3 parse_kv_classfier_results_legacy.py --dataset='../gsm8k/gsm8k_test.jsonl' --generation_result_path='../gsm8k/gsm8k_test_dpsk_14b_trail.jsonl' --eval_result_path='../gsm8k/gsm8k_test_results_64_4.jsonl' | tee 64_4_layers_8b_dpsk_trail.log
+python3 run_kv_classfier_eval.py --dataset_path="../gsm8k/gsm8k_test.jsonl" --checkpoint_path="checkpoints_re/kv_classifier_iter_169_seq_len_128_n_layers_2_selected_layers_46,47_batch_size_1024_lr_1e-05.pt"
+python3 parse_kv_classfier_results_legacy.py --dataset='../gsm8k/gsm8k_test.jsonl' --generation_result_path='../gsm8k/gsm8k_test_dpsk_14b_trail.jsonl' --eval_result_path='../gsm8k/gsm8k_test_results_128_2.jsonl' | tee 128_2_layers_8b_dpsk_trail.log
+
+python3 run_kv_classfier_eval.py --dataset_path="../gsm8k/gsm8k_test.jsonl" --checkpoint_path="checkpoints_re/kv_classifier_iter_79_seq_len_32_n_layers_2_selected_layers_46,47_batch_size_1024_lr_1e-05.pt"
+python3 parse_kv_classfier_results_legacy.py --dataset='../gsm8k/gsm8k_test.jsonl' --generation_result_path='../gsm8k/gsm8k_test_dpsk_14b_trail.jsonl' --eval_result_path='../gsm8k/gsm8k_test_results_32_2.jsonl' | tee 32_2_layers_8b_dpsk_trail.log
+
+python3 run_kv_classfier_eval.py --dataset_path="../math500/math500_test.jsonl" --checkpoint_path="checkpoints_re/kv_classifier_iter_79_seq_len_32_n_layers_8_selected_layers_40,41,42,43,44,45,46,47_batch_size_1024_lr_1e-05.pt"
+python3 parse_kv_classfier_results_legacy.py --dataset='../math500/math500_test.jsonl' --generation_result_path='../math500/math500_test_dpsk_14b_trail.jsonl' --eval_result_path='../math500/math500_test_results_32_8.jsonl' | tee math500_32_8_layers_8b_dpsk_trail.log
+python3 run_kv_classfier_eval.py --dataset_path="../math500/math500_test.jsonl" --checkpoint_path="checkpoints_re/kv_classifier_iter_109_seq_len_64_n_layers_4_selected_layers_44,45,46,47_batch_size_1024_lr_1e-05.pt"
+python3 parse_kv_classfier_results_legacy.py --dataset='../math500/math500_test.jsonl' --generation_result_path='../math500/math500_test_dpsk_14b_trail.jsonl' --eval_result_path='../math500/math500_test_results_64_4.jsonl' | tee math500_64_4_layers_8b_dpsk_trail.log
+python3 run_kv_classfier_eval.py --dataset_path="../math500/math500_test.jsonl" --checkpoint_path="checkpoints_re/kv_classifier_iter_169_seq_len_128_n_layers_2_selected_layers_46,47_batch_size_1024_lr_1e-05.pt"
+python3 parse_kv_classfier_results_legacy.py --dataset='../math500/math500_test.jsonl' --generation_result_path='../math500/math500_test_dpsk_14b_trail.jsonl' --eval_result_path='../math500/math500_test_results_128_2.jsonl' | tee math500_128_2_layers_8b_dpsk_trail.log
+
+
+python3 run_kv_classfier_eval.py --dataset_path="../math500/math500_test.jsonl" --checkpoint_path="checkpoints_re/kv_classifier_iter_79_seq_len_32_n_layers_2_selected_layers_46,47_batch_size_1024_lr_1e-05.pt"
+python3 parse_kv_classfier_results_legacy.py --dataset='../math500/math500_test.jsonl' --generation_result_path='../math500/math500_test_dpsk_14b_trail.jsonl' --eval_result_path='../math500/math500_test_results_32_2.jsonl' | tee math500_32_2_layers_8b_dpsk_trail.log
+
+# python3 run_kv_classifier_multi.py --dataset_path="../gsm8k/gsm8k_test.jsonl" --checkpoint_path="checkpoints_re/kv_classifier_iter_99_seq_len_32_n_layers_8_selected_layers_40,41,42,43,44,45,46,47_batch_size_1024_lr_1e-05.pt" | tee gsm8K_32_8_layers_8b_dpsk_trail_multi.log
+# python3 run_kv_classifier_multi.py --dataset_path="../gsm8k/gsm8k_test.jsonl" --checkpoint_path="checkpoints_re/kv_classifier_iter_129_seq_len_64_n_layers_4_selected_layers_44,45,46,47_batch_size_1024_lr_1e-05.pt" | tee gsm8K_64_4_layers_8b_dpsk_trail_multi.log
+# python3 run_kv_classifier_multi.py --dataset_path="../gsm8k/gsm8k_test.jsonl" --checkpoint_path="checkpoints_re/kv_classifier_iter_149_seq_len_128_n_layers_2_selected_layers_46,47_batch_size_1024_lr_1e-05.pt" | tee gsm8K_128_2_layers_8b_dpsk_trail_multi
+
+# python3 run_kv_classifier_multi.py --dataset_path="../math500/math500_test.jsonl" --checkpoint_path="checkpoints_re/kv_classifier_iter_99_seq_len_32_n_layers_8_selected_layers_40,41,42,43,44,45,46,47_batch_size_1024_lr_1e-05.pt" | tee math500_32_8_layers_8b_dpsk_trail_multi.log
+# python3 run_kv_classifier_multi.py --dataset_path="../math500/math500_test.jsonl" --checkpoint_path="checkpoints_re/kv_classifier_iter_129_seq_len_64_n_layers_4_selected_layers_44,45,46,47_batch_size_1024_lr_1e-05.pt" | tee math500_64_4_layers_8b_dpsk_trail_multi.log
+# python3 run_kv_classifier_multi.py --dataset_path="../math500/math500_test.jsonl" --checkpoint_path="checkpoints_re/kv_classifier_iter_149_seq_len_128_n_layers_2_selected_layers_46,47_batch_size_1024_lr_1e-05.pt" | tee math500_128_2_layers_8b_dpsk_trail_multi.log
+
+
+# python parse_kv_classfier_results.py --dataset_path="../gsm8k/gsm8k_test.jsonl" --eval_result_path="../gsm8k/gsm8k_test_results_multi_32_8.jsonl" | tee 32_8_layers_8b_dpsk_trail_multi_results.log
+# python parse_kv_classfier_results.py --dataset_path="../gsm8k/gsm8k_test.jsonl" --eval_result_path="../gsm8k/gsm8k_test_results_multi_64_4.jsonl" | tee 64_4_layers_8b_dpsk_trail_multi_results.log
+# python parse_kv_classfier_results.py --dataset_path="../gsm8k/gsm8k_test.jsonl" --eval_result_path="../gsm8k/gsm8k_test_results_multi_128_2.jsonl" | tee 128_2_layers_8b_dpsk_trail_multi_results.log
+# python parse_kv_classfier_results.py --dataset_path="../math500/math500_test.jsonl" --eval_result_path="../math500/math500_test_results_multi_32_8.jsonl" | tee math500_32_8_layers_8b_dpsk_trail_multi_results.log
+# python parse_kv_classfier_results.py --dataset_path="../math500/math500_test.jsonl" --eval_result_path="../math500/math500_test_results_multi_64_4.jsonl" | tee math500_64_4_layers_8b_dpsk_trail_multi_results.log
+# python parse_kv_classfier_results.py --dataset_path="../math500/math500_test.jsonl" --eval_result_path="../math500/math500_test_results_multi_128_2.jsonl" | tee math500_128_2_layers_8b_dpsk_trail_multi_results.log
