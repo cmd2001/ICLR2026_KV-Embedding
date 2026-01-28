@@ -35,7 +35,7 @@ The core implementation of KVClassifier is provided in `kv_classfier.py`.
 
 ```bibtex
 @inproceedings{
-anonymous2026beyond,
+xing2026beyond,
 title={Beyond Speedup - Utilizing {KV} Cache for Sampling and Reasoning},
 author={Xing, Zeyu and Li, Xing and Zhen, Hui-Ling and Yuan, Mingxuan and Pan, Sinno Jialin},
 booktitle={The Fourteenth International Conference on Learning Representations},
